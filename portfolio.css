@@ -1,0 +1,200 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.barradenavegacao {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+
+.logoraul {
+    margin-left: 5%;
+    width: 120px;
+    cursor: pointer;
+}
+
+.listanavegacao {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.itensnavegacao {
+    display: inline-block;
+    list-style: none;
+    margin: 0 2%;
+}
+
+.itensnavegacao a {
+    text-transform: uppercase;
+    color: #FFF;
+    position: relative;
+}
+
+.itensnavegacao a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFF;
+    transition: 0.4s;
+}
+
+.itensnavegacao a:hover::after {
+    width:70%;
+}
+
+.contato {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.imagemcontato {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.portfolio {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfoliotitulo {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    color: #FFF;
+}
+
+.globo {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: solid 1px #515151;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+.logoglobo {
+    width: 150px;
+    align-self: center;
+}
+
+.textoglobo {
+    font-size: 1.5rem;
+    color: #FFF;
+    margin-top: 20%;
+}
+
+.apeperia {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: solid 1px #515151;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+.logoapeperia {
+    width: 230px;
+    align-self: center;
+}
+
+.textoapeperia {
+    font-size: 1.5rem;
+    color: #FFF;
+    margin-top: 42%;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: solid 1px #515151;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+.logoflexbox {
+    width: 230px;
+    align-self: center;
+}
+
+.textoflexbox {
+    font-size: 1.5rem;
+    color: #FFF;
+    margin-top: 42%;
+}
+
+.flexbox:hover {
+    transition: ease 1s;
+    transform: scale(1.1);
+}
+
+.globo:hover {
+    transition: ease 1s;
+    transform: scale(1.12);
+}
+
+.apeperia:hover {
+    transition: ease 1s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 815px) {
+    .flexbox {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .textoglobo {
+        margin-top: 5%;
+    }
+
+    .textoapeperia {
+        margin-top: 5%;
+    }
+
+    .textoflexbox {
+        margin-top: 5%;
+    }
+
+    .apeperia, .flexbox {
+        margin-top: 10px;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+}
