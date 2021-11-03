@@ -1,0 +1,124 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.barradenavegacao {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+
+.logoraul {
+    margin-left: 5%;
+    width: 120px;
+    cursor: pointer;
+}
+
+.listanavegacao {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.itensnavegacao {
+    display: inline-block;
+    list-style: none;
+    margin: 0 2%;
+}
+
+.itensnavegacao a {
+    text-transform: uppercase;
+    color: #FFF;
+    position: relative;
+}
+
+.itensnavegacao a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFF;
+    transition: 0.4s;
+}
+
+.itensnavegacao a:hover::after {
+    width:70%;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagemsobre {
+    border: 2px solid #FFF;
+    border-radius: 400px;
+    width: 13%;
+    margin-bottom: 1%;
+
+}
+
+
+.conteudosobre {
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 1.4%;
+    width: 70%;
+    color: #000;
+    background-color: #909090;
+    opacity: 85%;
+    flex-wrap: wrap;
+    line-height: 1.2;
+}
+
+.contato {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.imagemcontato {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 570px) {
+    .conteudosobre {
+        font-size: 1rem;
+    
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .conteudosobre {
+        font-size: 0.8rem;
+    
+    }
+
+}
